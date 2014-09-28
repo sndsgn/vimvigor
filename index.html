@@ -23,20 +23,14 @@
       </h1>
     </header>
 
-    <section class="phll mbm mtl">
-      <table class="list-h p0 brdr-c">
-        <tr class="di phrl">
-        <td onclick="normalVisibility()" class="fsm dib mtl"><a class="pt pb phr phl ff-vim clickedNormal brdr-dot">normal</a></td>
-        </td>
-        <td onclick="insertVisibility()" class="fsm dib mtl mll mr"><a class="pt pb phr phl ff-vim tac clickedInsert brdr-FFFFFF brdr-dot">insert</a></td>
-
-      </tr>
-      <tr class="di">
-        <td onclick="motionVisibility()" class="fsm dib phrm mtl"><a class="pt pb phr phl ff-vim tac clickedMotion brdr-FFFFFF brdr-dot">motion</a></td>
-        <td onclick="operatorVisibility()" class="fsm dib mtl"><a class="pt pb phr phl ff-vim tac clickedOperator brdr-FFFFFF brdr-dot">operator</a></td>
-      </tr>
-      </table>
-    </section>
+    <nav class="mbm mtm">
+      <ul class="p0">
+        <li onclick="normalVisibility()" class="f db mtl dib phll"><a class="pt pb phl phr ff-vim clickedNormal brdr-dot">normal</a></li>
+        <li onclick="insertVisibility()" class="f db mtl dib phlxl"><a class="pt pb phr phl ff-vim tac clickedInsert brdr-FFFFFF brdr-dot">insert</a></li>
+        <li onclick="motionVisibility()" class="f db mtl dib phll"><a class="pt pb phr phl ff-vim tac clickedMotion brdr-FFFFFF brdr-dot">motion</a></td>
+        <li onclick="operatorVisibility()" class="f db mtl dib phlxl"><a class="pt pb phr phl ff-vim tac clickedOperator brdr-FFFFFF brdr-dot">operator</a></td>
+      </ul>
+    </nav>
     
     <dl class="brdr-c brdr-sld-thn brdr-bn brdr-rn brdr-ln mbl mtxl pb normal">
       <dt class="ff fsm phll fw0 pbs pt dib js-dib-show">

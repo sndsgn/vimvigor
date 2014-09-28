@@ -89,23 +89,3 @@
         $('.clickedMotion').removeClass('brdr-000000');
       };
 
-/*    
-function isScrolledIntoView(elem) {
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
-
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
-
-    if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop)){
-    console.log("Code and Beats!");
-}
-}
-window.addEventListener("scroll", function() {
-     isScrolledIntoView($("#a"));
-}, false);
-   */ 
-
-
-
-
