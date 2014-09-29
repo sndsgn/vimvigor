@@ -486,7 +486,7 @@ code:hover {
 }
 
 .ff-vim {
-  font-family: "Inconsolata", "Open Sans", "Lucida Console", Monaco, sans-serif;}
+  font-family: "Inconsolata", "Open Sans", "Lucida Console", Monaco, monospace, sans-serif;}
 
 
 /*<link href='http://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>*/     
