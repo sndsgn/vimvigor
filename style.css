@@ -400,7 +400,7 @@ code:hover {
 	padding-right: 1rem;}
 
 .phrxl {
-  padding-right: 15rem;}
+  padding-right: 6rem;}
 
 .phrl {
 	padding-right: 3rem;}
@@ -834,6 +834,9 @@ dd:active .shown {
 
 .w80 { 
         width: 80%;}
+.w90 { 
+        width: 90%;}
+
 
       
 .w100 { 
