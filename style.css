@@ -37,10 +37,6 @@ a:hover {
 
 /*Code*/
 
-code:hover {
-  color: #909090;
-  -webkit-transition: color .4s ease-in-out; }
-
 .pos-t {
   position: relative;
   bottom: -3px;
