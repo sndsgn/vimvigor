@@ -100,6 +100,21 @@ code:hover {
 .brdr-bn {
   border-bottom: none;}
 
+.brdr-bs-thn {
+  border-bottom-style: thin;}
+
+.brdr-bs-sld {
+  border-bottom-style: solid;}
+
+.brdr-rs-thn {
+  border-left-style: thin;} 
+
+.brdr-ls-thn {
+  border-left-style: thin;} 
+
+.brdr-ls-sld {
+  border-left-style: solid;} 
+
 .brdr-ln {
   border-left: none;} 
 
@@ -286,14 +301,26 @@ code:hover {
 .brdr-lwz {
   border-left-width: 0px;}
 
+.brdr-rc-000000 {
+  border-right-color: #000000;}
+
 .brdr-rc-888888 {
   border-right-color: #888888;}
+
+.brdr-lc-000000 {
+  border-left-color: #000000;}
 
 .brdr-lc-888888 {
   border-left-color: #888888;}
 
+.brdr-bc-000000 {
+  border-bottom-color: #000000;}
+
 .brdr-bc-888888 {
   border-bottom-color: #888888;}
+
+.brdr-tc-888888 {
+  border-top-color: #888888;}
 
 .brdr-tc-000000 {
   border-top-color: #000000;}
@@ -301,8 +328,11 @@ code:hover {
 .brdr-ll {
   border-left: 4rem;}
 
-.brdr-tssld {
+.brdr-ts-sld {
   border-top-style: solid;}
+
+.brdr-ts-thn {
+  border-top-style: thin;}
 
 .brdr-rssld {
   border-right-style: solid;}
