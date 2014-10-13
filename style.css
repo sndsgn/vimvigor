@@ -343,7 +343,7 @@ code:hover {
 	padding-top: 1rem;}
 
 .ptsm {
-  padding-top: .75rem;}
+  padding-top: 1.25rem;}
 
 .ptm {
 	padding-top: 1.5rem;}
@@ -356,6 +356,9 @@ code:hover {
 
 .pb {
   padding-bottom: 1rem;}
+
+.pbsm {
+  padding-bottom: 1.25rem;}
 
 .pbm {
   padding-bottom: 1.5rem;}
@@ -791,7 +794,11 @@ dd:active .shown {
 }
 
 .lh-l {
-  line-height: 250%;
+  line-height: 200%;
+}
+
+.lh-m {
+  line-height: 150%;
 }
 
 .lh-letter {
