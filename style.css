@@ -37,6 +37,10 @@ a:hover {
 
 /*Code*/
 
+code:hover {
+  color: #909090;
+  -webkit-transition: color .4s ease-in-out; }
+
 .pos-t {
   position: relative;
   bottom: -3px;
@@ -95,21 +99,6 @@ a:hover {
 
 .brdr-bn {
   border-bottom: none;}
-
-.brdr-bs-thn {
-  border-bottom-style: thin;}
-
-.brdr-bs-sld {
-  border-bottom-style: solid;}
-
-.brdr-rs-thn {
-  border-left-style: thin;} 
-
-.brdr-ls-thn {
-  border-left-style: thin;} 
-
-.brdr-ls-sld {
-  border-left-style: solid;} 
 
 .brdr-ln {
   border-left: none;} 
@@ -297,26 +286,14 @@ a:hover {
 .brdr-lwz {
   border-left-width: 0px;}
 
-.brdr-rc-000000 {
-  border-right-color: #000000;}
-
 .brdr-rc-888888 {
   border-right-color: #888888;}
-
-.brdr-lc-000000 {
-  border-left-color: #000000;}
 
 .brdr-lc-888888 {
   border-left-color: #888888;}
 
-.brdr-bc-000000 {
-  border-bottom-color: #000000;}
-
 .brdr-bc-888888 {
   border-bottom-color: #888888;}
-
-.brdr-tc-888888 {
-  border-top-color: #888888;}
 
 .brdr-tc-000000 {
   border-top-color: #000000;}
@@ -324,11 +301,8 @@ a:hover {
 .brdr-ll {
   border-left: 4rem;}
 
-.brdr-ts-sld {
+.brdr-tssld {
   border-top-style: solid;}
-
-.brdr-ts-thn {
-  border-top-style: thin;}
 
 .brdr-rssld {
   border-right-style: solid;}
@@ -369,7 +343,7 @@ a:hover {
 	padding-top: 1rem;}
 
 .ptsm {
-  padding-top: 1.25rem;}
+  padding-top: .75rem;}
 
 .ptm {
 	padding-top: 1.5rem;}
@@ -385,9 +359,6 @@ a:hover {
 
 .pb {
   padding-bottom: 1rem;}
-
-.pbsm {
-  padding-bottom: 1.25rem;}
 
 .pbm {
   padding-bottom: 1.5rem;}
@@ -420,7 +391,7 @@ a:hover {
 	padding-left: 3rem;}
 
 .phlxl {
-  padding-left: 6rem;}
+  padding-left: 1rem;}
  
 .phrxs {
 	padding-right: .25rem;}
@@ -432,7 +403,7 @@ a:hover {
 	padding-right: 1rem;}
 
 .phrxl {
-  padding-right: 6rem;}
+  padding-right: 15rem;}
 
 .phrl {
 	padding-right: 3rem;}
@@ -510,7 +481,7 @@ a:hover {
 	font-size: .5rem;}
 
 .ff {   
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "HelveticaNeue-Light", "Arial", sans-serif;	
 }
 
 .ff-keys {
@@ -518,7 +489,7 @@ a:hover {
 }
 
 .ff-vim {
-  font-family: "Inconsolata", "Open Sans", "Lucida Console", Monaco, monospace, sans-serif;}
+  font-family: "Inconsolata", "Open Sans", "Lucida Console", Monaco, monospace;}
 
 
 /*<link href='http://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>*/     
@@ -823,11 +794,7 @@ dd:active .shown {
 }
 
 .lh-l {
-  line-height: 200%;
-}
-
-.lh-m {
-  line-height: 150%;
+  line-height: 250%;
 }
 
 .lh-letter {
@@ -870,9 +837,6 @@ dd:active .shown {
 
 .w80 { 
         width: 80%;}
-.w90 { 
-        width: 90%;}
-
 
       
 .w100 { 
