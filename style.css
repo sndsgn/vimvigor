@@ -336,14 +336,18 @@ code:hover {
 .phln {
   padding-left: 0;
 }
+
+.ptxs {
+	padding-top: .25rem;}
+
 .pts {
 	padding-top: .5rem;}
 
+.ptx {
+  padding-top: .75rem;}
+
 .pt {
 	padding-top: 1rem;}
-
-.ptsm {
-  padding-top: .75rem;}
 
 .ptm {
 	padding-top: 1.5rem;}
@@ -351,14 +355,23 @@ code:hover {
 .ptl {
 	padding-top: 2rem;}
 
+.pbxs {
+  padding-bottom: .25rem;}
+
 .pbs {
   padding-bottom: .5rem;}
 
 .pbx {
   padding-bottom: .75rem;}
 
+.pbmx {
+  padding-bottom: .85rem;}
+
 .pb {
   padding-bottom: 1rem;}
+
+.pbsm {
+  padding-bottom: 1.05rem;}
 
 .pbm {
   padding-bottom: 1.5rem;}
