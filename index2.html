@@ -1,0 +1,2167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Vim Commands Tutorial - Vim Vigor
+    </title>
+    <meta name="author" content="@sndsgns">
+    <meta name="description" content="Vim Commands Tutorial">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]--> 
+  </head>
+
+  <body class="m0">
+    <header id="0" class="">
+      <h1 class="fm ff phlm m0 mtl">
+        <a title="Vim Commands Tutorial Page" href="/" title="Vim Vigor" class="txt-brdr">Vim Vigor</a>
+        <span class="db f phlxs ff">Vim Commands Tutorial</span>
+      </h1>
+    </header>
+
+    <nav class="mbl mtm">
+      <ul class="">
+        <li onclick="normalVisibility()" class="f db mtl dib"><a class="pt pb phl phr ff-vim clickedNormal brdr-dot">normal</a></li>
+        <li onclick="insertVisibility()" class="f db mtl dib"><a class="pt pb phr phl ff-vim tac clickedInsert brdr-FFFFFF brdr-dot">insert</a></li>
+      </ul>
+      <ul class="">
+        <li onclick="motionVisibility()" class="f db mtl dib"><a class="pt pb phr phl ff-vim tac clickedMotion brdr-FFFFFF brdr-dot">motion</a></td>
+        <li onclick="operatorVisibility()" class="f db mtl dib"><a class="pt pb phr phl ff-vim tac clickedOperator brdr-FFFFFF brdr-dot">operator</a></td>
+      </ul>
+    </nav>
+
+    <main>
+      <article class="w100 brdr-c brdr-sld-thn brdr-ln brdr-bn brdr-rn mb mtl brdr-sp0 phrxl insert normal" autofocus id="vim-command-a"> 
+        <dl class="pb">
+          <dt class="ff fsm phlm fw0 pbs dib">
+          <dfn class="ff-vim b fm fsn" title="a"><a class="b" href="http://vimdoc.sourceforge.net/htmldoc/insert.html#a" title="Specification for Vim command a">a</a></dfn>
+          for after cursor
+          </dt>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-show">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pbm phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn js-show"><code class="ff-vim f">After cursor enter insert mode<span class="bgc-888888">.</span></code></dd>
+            <div class="ff-vim f b bgc-000000 phlsm phr pb pt w100 m0 brdr-tn js-show">&nbsp;</div>
+          </div>
+
+          <dd class="mb js-show"><kbd class=""><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000">A</kbd><kbd></dd>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600 js-hide dn">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pbm pts phl phrl dt-cell w100 brdr-rn brdr-ln brdr-bn js-hide dn"><code class="ff-vim f">After cursor enter insert mode.<span class="bgc-888888">&nbsp;</span></code></dd>
+          <div class="bgc-000000 pb pt w100 m0 brdr-tn js-hide dn"><code class="ff-vim f b">-- INSERT --</code></div>
+          </div>
+
+          <dd class="mb js-hide dn"><kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t">A</kbd><kbd></dd>
+        </dl>
+      </article>
+      
+      <article class="w100 brdr-c brdr-sld-thn brdr-ln brdr-bn brdr-rn mb mtl brdr-sp0 phrxl insert normal" id="vim-command-A" tabindex="1"> 
+        <dl class="pb">
+          <dt class="ff fsm phlm fw0 pbs dib">
+          <dfn class="ff-vim b fm fsn" title="A"><a class="b" href="http://vimdoc.sourceforge.net/htmldoc/insert.html#a" title="Specification for Vim command A">A</a></dfn>
+          for after line
+          </dt>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-show">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pbm phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn js-show"><code class="ff-vim f">After <span class="bgc-888888">l</span>ine enter insert mode.</code></dd>
+            <div class="ff-vim f b bgc-000000 phlsm phr pb pt w100 m0 brdr-tn js-show">&nbsp;</div>
+          </div>
+
+          <dd class="mb js-show"><kbd class=""><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000 mr">shift</kbd><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000">A</kbd><kbd></dd>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600 js-hide dn">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pbm pts phl phrl dt-cell w100 brdr-rn brdr-ln brdr-bn js-hide dn"><code class="ff-vim f">After line enter insert mode.<span class="bgc-888888">&nbsp;</span></code></dd>
+          <div class="bgc-000000 pb pt w100 m0 brdr-tn js-hide dn"><code class="ff-vim f b">-- INSERT --</code></div>
+          </div>
+
+          <dd class="mb js-hide dn"><kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t mr">shift</kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t">A</kbd><kbd></dd>
+        </dl>
+      </article>
+
+      <article class="w100 brdr-c brdr-sld-thn brdr-ln brdr-bn brdr-rn mb mtl brdr-sp0 phrxl motion normal" id="vim-command-b" tabindex="2"> 
+        <dl class="pb">
+          <dt class="ff fsm phlm fw0 pbs dib">
+          <dfn class="ff-vim b fm fsn" title="b"><a class="b" href="http://vimdoc.sourceforge.net/htmldoc/motion.html#b" title="Specification for Vim command b">b</a></dfn>
+          for back word
+          </dt>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-show">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pbm phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn js-show"><code class="ff-vim f">Back to beginning of word or special character.<span class="bgc-888888">&nbsp;</span></code></dd>
+            <div class="ff-vim f b bgc-000000 phlsm phr pb pt w100 m0 brdr-tn js-show">&nbsp;</div>
+          </div>
+
+          <dd class="mb js-show"><kbd class=""><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000">B</kbd><kbd></dd>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pbm phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn"><code class="ff-vim f">Back to beginning of word or special character<span class="bgc-888888">.</span></code></dd>
+            <div class="ff-vim f b bgc-000000 phlsm phr pb pt w100 m0 brdr-tn js-hide dn">&nbsp;</div>
+          </div>
+
+          <dd class="mb js-hide dn"><kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t">B</kbd><kbd></dd>
+        </dl>
+      </article>
+
+      <article class="w100 brdr-c brdr-sld-thn brdr-ln brdr-bn brdr-rn mb mtl brdr-sp0 phrxl motion normal" id="vim-command-B" tabindex="4"> 
+        <dl class="pb">
+          <dt class="ff fsm phlm fw0 pbs dib">
+          <dfn class="ff-vim b fm fsn" title="B"><a class="b" href="http://vimdoc.sourceforge.net/htmldoc/motion.html#B" title="Specification for Vim command B">B</a></dfn>
+          for back string
+          </dt>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-show">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pbm phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn js-show"><code class="ff-vim f">Back to beginning of character string.<span class="bgc-888888">&nbsp;</span></code></dd>
+            <div class="ff-vim f b bgc-000000 phlsm phr pb pt w100 m0 brdr-tn js-show">&nbsp;</div>
+          </div>
+
+          <dd class="mb js-show"><kbd class=""><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000 mr">shift</kbd><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000 mr">B</kbd><kbd></dd>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pbm phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn"><code class="ff-vim f">Back to beginning of character <span class="bgc-888888">s</span>tring.</code></dd>
+            <div class="ff-vim f b bgc-000000 phlsm phr pb pt w100 m0 brdr-tn js-hide dn">&nbsp;</div>
+          </div>
+
+          <dd class="mb js-hide dn"><kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t mr">shift</kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t">B</kbd><kbd></dd>
+        </dl>
+      </article>
+
+      <article class="w100 brdr-c brdr-sld-thn brdr-ln brdr-bn brdr-rn mb mtl brdr-sp0 phrxl insert operator normal" id="vim-command-c" tabindex="5"> 
+        <dl class="pb">
+          <dt class="ff fsm phlm fw0 pbs dib">
+          <dfn class="ff-vim b fm fsn" title="c"><a class="b" href="http://vimdoc.sourceforge.net/htmldoc/change.html#c" title="Specification for Vim command c">c</a></dfn>
+          for cut motion
+          </dt>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-show">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pb phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn js-show"><code class="ff-vim f">Cut on a line in a motion'<span class="bgc-888888">s</span> direction such as b.</code></dd>
+            <div class="ff-vim f b bgc-000000 phlsm phr pt pb w100 m0 brdr-tn js-show">&nbsp;</div>
+          </div>
+
+          <dd class="mb js-show"><kbd class=""><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000 mr">C</kbd><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000">B</kbd><kbd></dd>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pb phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn"><code class="ff-vim f">Cut on a line in a motion<span class="bgc-888888">s</span> direction such as b.</code></dd>
+            <div class="bgc-000000 pb pt w100 m0 brdr-tn js-hide dn"><code class="ff-vim f b">-- INSERT --</code></div>
+          </div>
+
+          <dd class="mb js-hide dn"><kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t mr">C</kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t">B</kbd><kbd></dd>
+        </dl>
+      </article>
+
+      <article class="w100 brdr-c brdr-sld-thn brdr-ln brdr-bn brdr-rn mb mtl brdr-sp0 phrxl insert operator normal" id="vim-command-C" tabindex="6"> 
+        <dl class="pb">
+          <dt class="ff fsm phlm fw0 pbs dib">
+          <dfn class="ff-vim b fm fsn" title="C"><a class="b" href="http://vimdoc.sourceforge.net/htmldoc/change.html#C" title="Specification for Vim command C">C</a></dfn>
+          for cut to line end
+          </dt>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-show">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pb phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn js-show"><code class="ff-vim f">Cut to end of <span class="bgc-888888">c</span>urrent line.</code></dd>
+            <div class="ff-vim f b bgc-000000 phlsm phr pt pb w100 m0 brdr-tn js-show">&nbsp;</div>
+          </div>
+
+          <dd class="mb js-show"><kbd class=""><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000 mr">shift</kbd><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000">C</kbd><kbd></dd>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pb phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn"><code class="ff-vim f">Cut to end of <span class="bgc-888888">&nbsp;</span></code></dd>
+            <div class="bgc-000000 pb pt w100 m0 brdr-tn js-hide dn"><code class="ff-vim f b">-- INSERT --</code></div>
+          </div>
+
+          <dd class="mb js-hide dn"><kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t mr">shift</kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t">C</kbd><kbd></dd>
+        </dl>
+      </article>
+
+      <article class="w100 brdr-c brdr-sld-thn brdr-ln brdr-bn brdr-rn mb mtl brdr-sp0 phrxl operator normal" id="vim-command-d" tabindex="7"> 
+        <dl class="pb">
+          <dt class="ff fsm phlm fw0 pbs dib">
+          <dfn class="ff-vim b fm fsn" title="d"><a class="b" href="http://vimdoc.sourceforge.net/htmldoc/change.html#d" title="Specification for Vim command d">d</a></dfn>
+          for delete motion
+          </dt>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-show">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pb phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn js-show"><code class="ff-vim f">Delete on current line i<span class="bgc-888888">n</span> motion's direction such as b.</code></dd>
+            <div class="ff-vim f b bgc-000000 phlsm phr pt pb w100 m0 brdr-tn js-show">&nbsp;</div>
+          </div>
+
+          <dd class="mb js-show"><kbd class=""><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000 mr">D</kbd><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000">B</kbd><kbd></dd>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pb phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn"><code class="ff-vim f">Delete on a current line <span class="bgc-888888">n</span> motion's direction such as b.</code></dd>
+            <div class="bgc-000000 pb pt w100 m0 brdr-tn js-hide dn"><code class="ff-vim f b">-- INSERT --</code></div>
+          </div>
+
+          <dd class="mb js-hide dn"><kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t mr">D</kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t">B</kbd><kbd></dd>
+        </dl>
+      </article>
+
+      <article class="w100 brdr-c brdr-sld-thn brdr-ln brdr-bn brdr-rn mb mtl brdr-sp0 phrxl operator normal" id="vim-command-D" tabindex="8"> 
+        <dl class="pb">
+          <dt class="ff fsm phlm fw0 pbs dib">
+          <dfn class="ff-vim b fm fsn" title="D"><a class="b" href="http://vimdoc.sourceforge.net/htmldoc/change.html#D" title="Specification for Vim command D">D</a></dfn>
+          for delete to line end
+          </dt>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-show">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pb phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn js-show"><code class="ff-vim f">Delete to the end of the lin<span class="bgc-888888">e</span>.</code></dd>
+            <div class="ff-vim f b bgc-000000 phlsm phr pt pb w100 m0 brdr-tn js-show">&nbsp;</div>
+          </div>
+
+          <dd class="mb js-show"><kbd class=""><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000 mr">shift</kbd><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000">D</kbd><kbd></dd>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pb phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f">Delete to the end of the line <span class="bgc-888888">&nbsp;</span></code></dd>
+            <div class="bgc-000000 pb pt w100 m0 brdr-tn js-hide dn"><code class="ff-vim f b">&nbsp;</code></div>
+          </div>
+
+          <dd class="mb js-hide dn"><kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t mr">shift</kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t">D</kbd><kbd></dd>
+        </dl>
+      </article>
+
+      <article class="w100 brdr-c brdr-sld-thn brdr-ln brdr-bn brdr-rn mb mtl brdr-sp0 phrxl motion normal" id="vim-command-e" tabindex="9"> 
+        <dl class="pb">
+          <dt class="ff fsm phlm fw0 pbs dib">
+          <dfn class="ff-vim b fm fsn" title="e"><a class="b" href="http://vimdoc.sourceforge.net/htmldoc/motion.html#e" title="Specification for Vim command e">e</a></dfn>
+          for end of string type 
+          </dt>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-show">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pb phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f">End of string of letters or special <span class="bgc-888888">c</span>haracters.</code></dd>
+            <div class="ff-vim f b bgc-000000 phlsm phr pt pb w100 m0 brdr-tn">&nbsp;</div>
+          </div>
+
+          <dd class="mb js-show"><kbd class=""><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000">E</kbd><kbd></dd>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pb phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f">End of string of letters or special character<span class="bgc-888888">s</span>.</code></dd>
+            <div class="bgc-000000 pb pt w100 m0 brdr-tn"><code class="ff-vim f b">&nbsp;</code></div>
+          </div>
+
+          <dd class="mb js-hide dn"><kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t">E</kbd><kbd></dd>
+        </dl>
+      </article>
+
+      <article class="w100 brdr-c brdr-sld-thn brdr-ln brdr-bn brdr-rn mb mtl brdr-sp0 phrxl motion normal" id="vim-command-E" tabindex="10"> 
+        <dl class="pb">
+          <dt class="ff fsm phlm fw0 pbs dib">
+          <dfn class="ff-vim b fm fsn" title="E"><a class="b" href="http://vimdoc.sourceforge.net/htmldoc/motion.html#E" title="Specification for Vim command E">E</a></dfn>
+          for end of string
+          </dt>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-show">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pb phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f">End of string of letters and special <span class="bgc-888888">c</span>haracters.</code></dd>
+            <div class="ff-vim f b bgc-000000 phlsm phr pt pb w100 m0 brdr-tn">&nbsp;</div>
+          </div>
+
+          <dd class="mb js-show"><kbd class=""><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000 mr">shift</kbd><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000">E</kbd><kbd></dd>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pb phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f">End of string of letters and special characters<span class="bgc-888888">.</span></code></dd>
+            <div class="bgc-000000 pb pt w100 m0 brdr-tn"><code class="ff-vim f b">&nbsp;</code></div>
+          </div>
+
+          <dd class="mb js-hide dn"><kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t mr">shift</kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t">E</kbd><kbd></dd>
+        </dl>
+      </article>
+
+      <article class="w100 brdr-c brdr-sld-thn brdr-ln brdr-bn brdr-rn mb mtl brdr-sp0 phrxl motion normal" id="vim-command-f" tabindex="11"> 
+        <dl class="pb">
+          <dt class="ff fsm phlm fw0 pbs dib">
+          <dfn class="ff-vim b fm fsn" title="f Vim letter command"><a class="b" href="http://vimdoc.sourceforge.net/htmldoc/motion.html#f" title="Specification for Vim command f">f</a></dfn>
+            for find  
+          </dt>
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-show">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pb phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f">Find the 3rd <span class="bgc-888888">i</span> on this line to the right.</code></dd>
+            <div class="ff-vim f b bgc-000000 phlsm phr pt pb w100 m0 brdr-tn">&nbsp;</div>
+          </div>
+
+          <dd class="mb js-show"><kbd class=""><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000 mr">3</kbd><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000 mr">f</kbd><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000">i</kbd><kbd></dd>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pb phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f">Find the 3rd i on this line to the r<span class="bgc-888888">i</span>ght.</code></dd>
+            <div class="ff-vim f b bgc-000000 phlsm phr pt pb w100 m0 brdr-tn">&nbsp;</div>
+          </div>
+
+          <dd class="mb js-hide dn"><kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t mr">3</kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t mr">f</kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t">i</kbd><kbd></dd>
+        </dl>
+      </article>
+
+      <article class="w100 brdr-c brdr-sld-thn brdr-ln brdr-bn brdr-rn mb mtl brdr-sp0 phrxl motion normal" id="vim-command-f" tabindex="12"> 
+        <dl class="pb">
+          <dt class="ff fsm phlm fw0 pbs dib">
+          <dfn class="ff-vim b fm fsn" title="F Vim letter command"><a class="b" href="http://vimdoc.sourceforge.net/htmldoc/motion.html#F" title="Specification for Vim command f">F</a></dfn>
+          for Find
+          </dt>
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-show">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pb phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f">Find the 3rd i on this l<span class="bgc-888888">i</span>ne to the left.</code></dd>
+            <div class="ff-vim f b bgc-000000 phlsm phr pt pb w100 m0 brdr-tn">&nbsp;</div>
+          </div>
+
+          <dd class="mb js-show"><kbd class=""><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000 mr">3</kbd><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000 mr">shift</kbd><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000 mr">F</kbd><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000">i</kbd><kbd></dd>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pb phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f">F<span class="bgc-888888">i</span>nd the 3rd i on this line to the left.</code></dd>
+            <div class="ff-vim f b bgc-000000 phlsm phr pt pb w100 m0 brdr-tn">&nbsp;</div>
+          </div>
+
+          <dd class="mb js-hide dn"><kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t mr">3</kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t mr">shift</kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t mr">F</kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t">i</kbd><kbd></dd>
+        </dl>
+      </article>
+
+      <article class="w100 brdr-c brdr-sld-thn brdr-ln brdr-bn brdr-rn mb mtl brdr-sp0 phrxl motion normal" id="vim-command-f" tabindex="13"> 
+        <dl class="pb">
+          <dt class="ff fsm phlm fw0 pbs dib">
+          <dfn class="ff-vim b fm fsn" title="gg Vim letter command"><a class="b" href="http://vimdoc.sourceforge.net/htmldoc/motion.html#gg" title="Specification for Vim command gg">gg</a></dfn>
+          for go to
+          </dt>
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-show">
+            <code class="f ff-vim pt pbs bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pbs phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f">Go to the 1st character position of the file</code></dd>
+            <div>
+              <code class="f ff-vim pts pblm bgc-000000 ff phl fc-FF6600 dt-cell">2</code>
+              <dd class="bgc-000000 fc-FFFFFF ff pts pb phl phrl w100 brdr-rn brdr-ln brdr-bn dt-cell"><code class="ff-vim f">or line specified<span class="bgc-888888">.</span></code></dd>
+            </div>
+          </div>
+
+          <dd class="mb js-show"><kbd class=""><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000 mr">g</kbd><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000">g</kbd><kbd></dd>
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn">
+            <code class="f ff-vim pt pbs bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pbs phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f"><span class="bgc-888888">G</span>o to the 1st character position of the file</code></dd>
+            <div>
+              <code class="f ff-vim pts pblm bgc-000000 ff phl fc-FF6600 dt-cell">2</code>
+              <dd class="bgc-000000 fc-FFFFFF ff pts pb phl phrl w100 brdr-rn brdr-ln brdr-bn dt-cell"><code class="ff-vim f">or line specified.</code></dd>
+            </div>
+          </div>
+
+          <dd class="mb js-hide dn"><kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t mr">g</kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t">g</kbd><kbd></dd>
+        </dl>
+      </article>
+
+      <article class="w100 brdr-c brdr-sld-thn brdr-ln brdr-bn brdr-rn mb mtl brdr-sp0 phrxl motion normal" id="vim-command-G" tabindex="14"> 
+        <dl class="pb">
+          <dt class="ff fsm phlm fw0 pbs dib">
+          <dfn class="ff-vim b fm fsn" title="G Vim letter command"><a class="b" href="http://vimdoc.sourceforge.net/htmldoc/motion.html#G" title="Specification for Vim command G">G</a></dfn>
+          for Go To
+          </dt>
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-show">
+            <code class="f ff-vim pt pbs bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pbs phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f">Go to the <span class="bgc-888888">1</span>st character position of the last line</code></dd>
+            <div>
+              <code class="f ff-vim pts pblm bgc-000000 ff phl fc-FF6600 dt-cell">2</code>
+              <dd class="bgc-000000 fc-FFFFFF ff pts pb phl phrl w100 brdr-rn brdr-ln brdr-bn dt-cell"><code class="ff-vim f">or line specified.</code></dd>
+            </div>
+          </div>
+
+          <dd class="mb js-show"><kbd class=""><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000 mr">shift</kbd><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000">g</kbd><kbd></dd>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn">
+            <code class="f ff-vim pt pbs bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pbs phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f">Go to the 1st character position of the last line</code></dd>
+            <div>
+              <code class="f ff-vim pts pblm bgc-000000 ff phl fc-FF6600 dt-cell">2</code>
+              <dd class="bgc-000000 fc-FFFFFF ff pts pb phl phrl w100 brdr-rn brdr-ln brdr-bn dt-cell"><code class="ff-vim f"><span class="bgc-888888">o</span>r line specified.</code></dd>
+            </div>
+          </div>
+
+          <dd class="mb js-hide dn"><kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t mr">shift</kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t">g</kbd><kbd></dd>
+        </dl>
+      </article>
+
+      <article class="w100 brdr-c brdr-sld-thn brdr-ln brdr-bn brdr-rn mb mtl brdr-sp0 phrxl motion normal" id="vim-command-h" tabindex="15"> 
+        <dl class="pb">
+          <dt class="ff fsm phlm fw0 pbs dib">
+          <dfn class="ff-vim b fm fsn" title="f Vim letter command"><a class="b" href="http://vimdoc.sourceforge.net/htmldoc/motion.html#h" title="Specification for Vim command h">h</a></dfn>
+          for hop left  
+          </dt>
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-show">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pb phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f">Hop left 3 characters<span class="bgc-888888">.</span></code></dd>
+          </div>
+
+          <dd class="mb js-show"><kbd class=""><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000 mr">3</kbd><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000">h</kbd><kbd></dd>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pb phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f">Hop left 3 charact<span class="bgc-888888">e</span>rs.</code></dd>
+          </div>
+
+          <dd class="mb js-hide dn"><kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t mr">3</kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t">h</kbd><kbd></dd>
+        </dl>
+      </article>
+
+      <article class="w100 brdr-c brdr-sld-thn brdr-ln brdr-bn brdr-rn mb mtl brdr-sp0 phrxl motion normal" id="vim-command-H" tabindex="14"> 
+        <dl class="pb">
+          <dt class="ff fsm phlm fw0 pbs dib">
+          <dfn class="ff-vim b fm fsn" title="H Vim letter command"><a class="b" href="http://vimdoc.sourceforge.net/htmldoc/motion.html#H" title="Specification for Vim command H">H</a></dfn>
+          for Head
+          </dt>
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-show">
+            <code class="f ff-vim pt pbs bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pbs phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f">Head to the top of the screen's first character with the cursor</code></dd>
+            <div>
+              <code class="f ff-vim pts pblm bgc-000000 ff phl fc-FF6600 dt-cell">2</code>
+              <dd class="bgc-000000 fc-FFFFFF ff pts pb phl phrl w100 brdr-rn brdr-ln brdr-bn dt-cell"><code class="ff-vim f">or to the number of lines <span class="bgc-888888">s</span>pecified below the screen top.</code></dd>
+            </div>
+          </div>
+
+          <dd class="mb js-show"><kbd class=""><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000 mr">shift</kbd><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000">h</kbd><kbd></dd>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn">
+            <code class="f ff-vim pt pbs bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pbs phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f"><span class="bgc-888888">H</span>ead to the top of the screen's first character with the cursor</code></dd>
+          <div>
+            <code class="f ff-vim pts pblm bgc-000000 ff phl fc-FF6600 dt-cell">2</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pb phl phrl w100 brdr-rn brdr-ln brdr-bn dt-cell"><code class="ff-vim f">or to the number of lines specified below the screen top.</code></dd>
+            </div>
+          </div>
+
+          <dd class="mb js-hide dn"><kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t mr">shift</kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t">h</kbd><kbd></dd>
+        </dl>
+      </article>
+
+      <article class="w100 brdr-c brdr-sld-thn brdr-ln brdr-bn brdr-rn mb mtl brdr-sp0 phrxl motion normal" id="vim-command-i" tabindex="15"> 
+        <dl class="pb">
+          <dt class="ff fsm phlm fw0 pbs dib">
+            <dfn class="ff-vim b fm fsn" title="i Vim letter command"><a class="b" href="http://vimdoc.sourceforge.net/htmldoc/insert.html#i" title="Specification for Vim command i">i</a></dfn>
+          for insert
+          </dt>
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-show">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pb phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f">Before cursor enter insert mode<span class="bgc-888888">.</span></code></dd>
+            <div class="ff-vim f b bgc-000000 phlsm phr pt pb w100 m0 brdr-tn js-show">&nbsp;</div>
+          </div>
+
+          <dd class="mb js-show"><kbd class=""><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000">i</kbd><kbd></dd>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn">
+          <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+          <dd class="bgc-000000 fc-FFFFFF ff pts pb phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f">Before cursor enter insert mode<span class="bgc-888888">.</span></code></dd>
+          <div class="bgc-000000 pb pt w100 m0 brdr-tn js-hide dn"><code class="ff-vim f b">-- INSERT --</code></div>
+          </div>
+          <dd class="mb js-hide dn"><kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t">i</kbd><kbd></dd>
+        </dl>
+      </article>
+
+      <article class="w100 brdr-c brdr-sld-thn brdr-ln brdr-bn brdr-rn mb mtl brdr-sp0 phrxl motion normal" id="vim-command-I" tabindex="16"> 
+        <dl class="pb">
+          <dt class="ff fsm phlm fw0 pbs dib">
+          <dfn class="ff-vim b fm fsn" title="I Vim letter command"><a class="b" href="http://vimdoc.sourceforge.net/htmldoc/insert.html#I" title="Specification for Vim command I">I</a></dfn>
+          for Insert 
+          </dt>
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-show">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pb phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f">Before line enter insert mode<span class="bgc-888888">.</span></code></dd>
+            <div class="ff-vim f b bgc-000000 phlsm phr pt pb w100 m0 brdr-tn js-show">&nbsp;</div>
+          </div>
+
+          <dd class="mb js-show"><kbd class=""><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000 mr">shift</kbd><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000">i</kbd><kbd></dd>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn">
+            <code class="f ff-vim pt pblm bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts pb phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f"><span class="bgc-888888">B</span>efore line enter insert mode.</code></dd>
+            <div class="bgc-000000 pb pt w100 m0 brdr-tn js-hide dn"><code class="ff-vim f b">-- INSERT --</code></div>
+          </div>
+          <dd class="mb js-hide dn"><kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t mr">shift</kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t">i</kbd><kbd></dd>
+        </dl>
+      </article>
+
+      <article class="w100 brdr-c brdr-sld-thn brdr-ln brdr-bn brdr-rn mb mtl brdr-sp0 phrxl motion normal" id="vim-command-j" tabindex="17"> 
+        <dl class="pb">
+          <dt class="ff fsm phlm fw0 pbs dib">
+          <dfn class="ff-vim b fm fsn" title="j Vim letter command"><a class="b" href="http://vimdoc.sourceforge.net/htmldoc/motion.html#j" title="Specification for Vim command j">j</a></dfn>
+          for jump down  
+          </dt>
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-show">
+            <code class="f ff-vim pt bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f">Jump down <span class="bgc-888888">o</span>ne or the number</code></dd>
+            <div>
+              <code class="f ff-vim pts pblm bgc-000000 ff phl fc-FF6600 dt-cell">2</code>
+              <dd class="bgc-000000 fc-FFFFFF ff pts pb phl phrl w100 brdr-rn brdr-ln brdr-bn dt-cell"><code class="ff-vim f">of lines specified.</code></dd>
+            </div>
+          </div>
+          <dd class="mb js-show"><kbd class=""><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000">j</kbd><kbd></dd>
+
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn">
+            <code class="f ff-vim pt bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f">Jump down one or the number</code></dd>
+            <div>
+              <code class="f ff-vim pts pblm bgc-000000 ff phl fc-FF6600 dt-cell">2</code>
+              <dd class="bgc-000000 fc-FFFFFF ff pts pb phl phrl w100 brdr-rn brdr-ln brdr-bn dt-cell"><code class="ff-vim f">of lines s<span class="bgc-888888">p</span>ecified.</code></dd>
+            </div>
+          </div>
+          <dd class="mb js-hide dn"><kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t">j</kbd><kbd></dd>
+        </dl>
+      </article>
+
+      <article class="w100 brdr-c brdr-sld-thn brdr-ln brdr-bn brdr-rn mb mtl brdr-sp0 phrxl motion normal" id="vim-command-J" tabindex="18"> 
+        <dl class="pb">
+          <dt class="ff fsm phlm fw0 pbs dib">
+          <dfn class="ff-vim b fm fsn" title="J Vim letter command"><a class="b" href="http://vimdoc.sourceforge.net/htmldoc/change.html#J" title="Specification for Vim command J">J</a></dfn>
+          for Join   
+          </dt>
+          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-show">
+            <code class="f ff-vim pt bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+            <dd class="bgc-000000 fc-FFFFFF ff pts phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f">Join the current line <span class="bgc-888888">w</span>ith the line below</code></dd>
+            <div>
+              <code class="f ff-vim pts pbsm bgc-000000 ff phl fc-FF6600 dt-cell">2</code>
+              <dd class="bgc-000000 fc-FFFFFF ff pts pbsm phl phrl w100 brdr-rn brdr-ln brdr-bn dt-cell"><code class="ff-vim f">or number of lines specified below.</code></dd>
+            </div>
+          </div>
+          <dd class="mb js-show"><kbd class=""><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000 mr">shift</kbd><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000">j</kbd><kbd></dd>
+
+              <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn">
+                <code class="f ff-vim pt bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+                <dd class="bgc-000000 fc-FFFFFF ff pts phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f">Join the current line <span class="bgc-888888">w</span>ith the line below or number of lines specified below.</code></dd>
+                <div class="ff-vim f b bgc-000000 phlsm phr pts pb w100 m0 brdr-tn js-hide dn">&nbsp;</div>
+              </div>
+            </div>
+            <dd class="mb js-hide dn"><kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t mr">shift</kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t">j</kbd><kbd></dd>
+              </dl>
+            </article>
+
+            <article class="w100 brdr-c brdr-sld-thn brdr-ln brdr-bn brdr-rn mb mtl brdr-sp0 phrxl motion normal" id="vim-command-k" tabindex="19"> 
+              <dl class="pb">
+                <dt class="ff fsm phlm fw0 pbs dib">
+                <dfn class="ff-vim b fm fsn" title="k Vim letter command"><a class="b" href="http://vimdoc.sourceforge.net/htmldoc/motion.html#k" title="Specification for Vim command k">k</a></dfn>
+                for kite
+                </dt>
+                <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-show">
+                  <code class="f ff-vim pt bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+                  <dd class="bgc-000000 fc-FFFFFF ff pts phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f"><span class="bgc-888888">K</span>ite down the number of lines specified.</code></dd>
+                  <div>
+                    <code class="f ff-vim pts pbm bgc-000000 ff phl fc-FF6600 dt-cell">2</code>
+                    <dd class="bgc-000000 fc-FFFFFF ff pts pbm phl phrl w100 brdr-rn brdr-ln brdr-bn dt-cell"><code class="ff-vim f">We will use <span class="b">k</span> without a number.</code></dd>
+                  </div>
+                </div>
+                <dd class="mb js-show"><kbd class=""><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000 mr">k</kbd><kbd></dd>
+
+                <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn">
+                  <code class="f ff-vim pt bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+                  <dd class="bgc-000000 fc-FFFFFF ff pts phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f">Kite down the number of lines specified.</code></dd>
+                  <div>
+                    <code class="f ff-vim pts pbm bgc-000000 ff phl fc-FF6600 dt-cell">2</code>
+                    <dd class="bgc-000000 fc-FFFFFF ff pts pbm phl phrl w100 brdr-rn brdr-ln brdr-bn dt-cell"><code class="ff-vim f"><span class="bgc-888888">W</span>e will use <span class="b">k</span> without a number.</code></dd>
+                  </div>
+                </div>
+                <dd class="mb js-hide dn"><kbd class=""><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t mr">k</kbd></kbd></dd>
+                    </dl>
+                  </article>
+
+                  <article class="w100 brdr-c brdr-sld-thn brdr-ln brdr-bn brdr-rn mb mtl brdr-sp0 phrxl motion normal" id="vim-command-l" tabindex="20"> 
+                    <dl class="pb">
+                      <dt class="ff fsm phlm fw0 pbs dib">
+                      <dfn class="ff-vim b fm fsn" title="l Vim letter command"><a class="b" href="http://vimdoc.sourceforge.net/htmldoc/motion.html#l" title="Specification for Vim command l">l</a></dfn>
+eap
+                      </dt>
+                      <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-show">
+                        <code class="f ff-vim pt bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+                        <dd class="bgc-000000 fc-FFFFFF ff pts pbm phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f"><span class="bgc-888888">L</span>eap right the number of letters specified.</code></dd>
+                      </div>
+                      <dd class="mb js-show"><kbd class=""><kbd class="brdr-sld brdr-tc-000000 brdr-bc-888888 brdr-tp-thn brdr-rc-000000 brdr-lc-888888 brdr-rs-thn f ff-keys brdr-key phlsm phrsm pt pb fc-F8F8F8 bgc-000000 mr">l</kbd><kbd></dd>
+
+                          <div class="mbm bgc-000000 fc-FFFFFF ff pb pts phlsm phrl w100 brdr-rn brdr-ln brdr-bn js-hide dn">
+                            <code class="f ff-vim pt bgc-000000 ff dt-cell phl fc-FF6600">1</code>
+                            <dd class="bgc-000000 fc-FFFFFF ff pts pbm phl dt-cell phrl w100 brdr-rn brdr-ln brdr-bn"><code class="ff-vim f">L<span class="bgc-888888">e</span>ap right the number of letters specified.</code></dd>
+                          </div>
+                          <dd class="mb js-hide dn"><kbd><kbd class="brdr-sld-thn brdr-000000 ff-keys brdr-key phlsm phrsm pt pb fc-F3F3F3 f bgc-000000 pos-t mr">l</kbd></kbd></dd>
+                        </dl>
+                      </article>
+
+             <section id="vim-l-commands" class="">    
+               <table class="brdr-sp0 motion dib phlm mtl vat">
+                 <thead> 
+                   <tr>
+                     <td class="fm ff fsn pb pts brdr-bn"><a class="phls phrs brdr-sld-thn bgc-000000 pts" href="http://vimdoc.sourceforge.net/htmldoc/motion.html#l"><span class="fc-FFFFFF phls phrs">l</span></a></td> 
+                     <td class="fm ff phrs pb pts">eap</td>
+                   </tr>
+                 </thead>
+
+                 <tfoot>
+                   <tr>
+                     <td colspan="2" class="pt pbs maxw tac"><button title="Press to see the Vim letter commands in action." tabindex="23" id="l" class="cp brdr-sp0 fc-FFFFFF fm m0 brdr-000000 brdr-rad bgc-000000 pbs phl phr" type="button" onclick="displayExample(this.id)">
+                         <span class="fsm">&#x25b6;</span>
+                       </button>
+                     </td>
+                   </tr>
+                 </tfoot>
+
+                 <tbody id="show-l" class="js-show">
+                   <tr>  
+                     <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="7">1</td>
+                     <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Leap righ<span class="bgc-888888">t</span></td>
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">by number of</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">characters</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">specified.</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">We will use</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn"><span class="b">3l</span> here.</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                 </tbody>
+
+                 <tbody id="hide-l" class="dn js-hide">
+                   <tr>  
+                     <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="7">1</td>
+                     <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Leap right</td>
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">b<span class="bgc-888888">y</span> number of</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">characters</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">specified.</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">We will use</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn"><span class="b">3l</span> here.</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                 </tbody>
+               </table>
+
+               <table class="brdr-sp0 motion dib phlm mtl">
+                 <thead> 
+                   <tr>
+                     <td class="fm ff fsn pb pts brdr-bn phn"><a class="phls phrs brdr-sld-thn bgc-000000 pts" href="http://vimdoc.sourceforge.net/htmldoc/motion.html#]#"><span class="fc-FFFFFF">L</span></a></td> 
+                     <td class="fm ff pb phln pts">ast</td>
+                   </tr>
+                 </thead>
+
+                 <tfoot>
+                   <tr>
+                     <td colspan="2" class="pt pbs maxw tac"><button title="Press to see the Vim letter commands in action." tabindex="24" id="L" class="cp brdr-sp0 fc-FFFFFF fm m0 brdr-000000 brdr-rad bgc-000000 pbs phl phr" type="button" onclick="displayExample(this.id)">
+                         <span class="fsm">&#x25b6;</span>
+                       </button>
+                     </td>
+                   </tr>
+                 </tfoot>
+
+                 <tbody id="show-L" class="js-show">
+                   <tr>  
+                     <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="5">6</td>
+                     <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Go to the</td>
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">first</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">character</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">of the last</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">screen line.</td>
+                   </tr>
+                   <tr>
+                     <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="4">7</td>
+                     <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn"><span class="b">2L</span> <span class="bgc-888888">w</span>ill leap</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">to the 2nd</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">to the last</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">screen line.</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                 </tbody>
+
+                 <tbody id="hide-L" class="dn js-hide">
+                   <tr>  
+                     <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="5">6</td>
+                     <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn"><span class="bgc-888888">G</span>o to the</td>
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">first</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">character</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">of the last</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">screen line.</td>
+                   </tr>
+                   <tr>
+                     <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="4">7</td>
+                     <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn"><span class="b">2L</span> will leap</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">to the 2nd</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">to the last</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">screen line.</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                 </tbody>
+               </table>
+             </section>
+
+             <section id="vim-m-commands" class="">    
+               <table class="brdr-sp0 motion dib phlm mtl vat">
+                 <thead> 
+                   <tr>
+                     <td class="fm ff fsn pb pts brdr-bn"><a class="phls phrs brdr-sld-thn bgc-000000 pts" href="http://vimdoc.sourceforge.net/htmldoc/motion.html#m"><span class="fc-FFFFFF">m</span></a></td> 
+                     <td class="fm ff phrs pb pts">ark</td>
+                   </tr>
+                 </thead>
+
+                 <tfoot>
+                   <tr>
+                     <td colspan="2" class="pt pbs maxw tac"><button title="Press to see the Vim letter commands in action." tabindex="25" id="m" class="cp brdr-sp0 fc-FFFFFF fm m0 brdr-000000 brdr-rad bgc-000000 pbs phl phr" type="button" onclick="displayExample(this.id)">
+                         <span class="fsm">&#x25b6;</span>
+                       </button>
+                     </td>
+                   </tr>
+                 </tfoot>
+
+                 <tbody id="show-m" class="js-show">
+                   <tr>  
+                     <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="4">1</td>
+                     <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Mark cursor</td>
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">position</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">with a-z</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">or A-Z.</td>
+                   </tr>
+                   <tr>
+                     <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="6">2</td>
+                     <td colspan="2" class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn"><span class="bgc-888888">R</span>eturn with</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn"><span class="b">`</span> backtick.</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">Here [ ] we</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">marked <span class="b">z</span>.</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">So <span class="b">`z</span>.</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">Try <span class="b">'</span> mark.</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                 </tbody>
+
+                 <tbody id="hide-m" class="dn js-hide">
+                   <tr>  
+                     <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="4">1</td>
+                     <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Mark cursor</td>
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">position</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">with a-z</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">or A-Z.</td>
+                   </tr>
+                   <tr>
+                     <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="6">2</td>
+                     <td colspan="2" class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Return with</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn"><span class="b">`</span> backtick.</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">Here [<span class="bgc-888888">&nbsp;</span>] we</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">marked <span class="b">z</span>.</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">So <span class="b">`z</span>.</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">Try <span class="b">'</span> mark.</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                 </tbody>
+               </table>
+
+               <table class="brdr-sp0 motion dib phlm mtl">
+                 <thead> 
+                   <tr>
+                     <td class="fm ff fsn pb pts brdr-bn phn"><a class="phls phrs brdr-sld-thn bgc-000000 pts" href="http://vimdoc.sourceforge.net/htmldoc/motion.html#]#"><span class="fc-FFFFFF">M</span></a></td> 
+                     <td class="fm ff pb phln pts">iddle</td>
+                   </tr>
+                 </thead>
+
+                 <tfoot>
+                   <tr>
+                     <td colspan="2" class="pt pbs maxw tac"><button title="Press to see the Vim letter commands in action." tabindex="26" id="M" class="cp brdr-sp0 fc-FFFFFF fm m0 brdr-000000 brdr-rad bgc-000000 pbs phl phr" type="button" onclick="displayExample(this.id)">
+                         <span class="fsm">&#x25b6;</span>
+                       </button>
+                     </td>
+                   </tr>
+                 </tfoot>
+
+                 <tbody id="show-M" class="js-show">
+                   <tr>  
+                     <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="2">6</td>
+                     <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Middle of</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">the screen.</td>
+                   </tr>
+                   <tr>
+                     <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="4">7</td>
+                     <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn"><span class="b">M</span> command</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">cannot use</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn"><span</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">a number.</td>
+                   </tr>
+                   <tr>
+                     <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="5">8</td>
+                     <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn"><span class="b">M</span> moves the</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">cursor to </td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">the first</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">character</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">mid-screen<span class="bgc-888888">.</span></td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                 </tbody>
+
+                 <tbody id="hide-M" class="dn js-hide">
+                   <tr>  
+                     <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="2">6</td>
+                     <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Middle of</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">the screen.</td>
+                   </tr>
+                   <tr>
+                     <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="4">7</td>
+                     <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn"><span class="b bgc-888888">M</span> command</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">cannot use</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn"><span</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">a number.</td>
+                     </tr>
+                     <tr>
+                       <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="5">8</td>
+                       <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn"><span class="b">M</span> moves the</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">cursor to </td>
+                     </tr>
+                     <tr>
+                       <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">the first</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">character</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">mid-screen.</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                     </tr>
+                   </tbody>
+               </table>
+             </section>
+
+             <section id="vim-n-commands" class="">    
+               <table class="brdr-sp0 normal dib phlm mtl vat">
+                 <thead> 
+                   <tr>
+                     <td class="fm ff fsn pb pts brdr-bn"><a class="phls phrs brdr-sld-thn bgc-000000 pts" href="http://vimdoc.sourceforge.net/htmldoc/pattern.html#n"><span class="fc-FFFFFF">n</span></a></td> 
+                     <td class="fm ff phrs pb pts">th</td>
+                   </tr>
+                 </thead>
+
+                 <tfoot>
+                   <tr>
+                     <td colspan="2" class="pt pbs maxw tac"><button title="Press to see the Vim letter commands in action." tabindex="27" id="n" class="cp brdr-sp0 fc-FFFFFF fm m0 brdr-000000 brdr-rad bgc-000000 pbs phl phr" type="button" onclick="displayExample(this.id)">
+                         <span class="fsm">&#x25b6;</span>
+                       </button>
+                     </td>
+                   </tr>
+                 </tfoot>
+
+                 <tbody id="show-n" class="js-show">
+                   <tr>  
+                     <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="5">1</td>
+                     <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">nth instance</td>
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">of</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">ch<span class="bgc-888888">a</span>racters</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">in search</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">direction.</td>
+                   </tr>
+                   <tr>
+                     <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="3">2</td>
+                     <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn"><span class="b">/</span> searches</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">forward and</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn"><span class="b">?</span> backward.</td>
+                   </tr>
+                   <tr>
+                     <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="5">3</td>
+                     <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">We searched</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn"><span class="b">/ar</span> and now</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">typed <span class="b">5n</span>.</td>
+                   </tr>
+                   <tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                 </tbody>
+
+                 <tbody id="hide-n" class="dn js-hide">
+                   <tr>  
+                     <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="5">1</td>
+                     <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">nth instance</td>
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">of</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">characters</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">in search</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">direction.</td>
+                   </tr>
+                   <tr>
+                     <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="3">2</td>
+                     <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn"><span class="b">/</span> searches</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">forward and</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn"><span class="b">?</span> backward.</td>
+                   </tr>
+                   <tr>
+                     <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="5">3</td>
+                     <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">We se<span class="bgc-888888">a</span>rched</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn"><span class="b">/ar</span> and now</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">typed <span class="b">5n</span>.</td>
+                   </tr>
+                   <tr>
+                     <tr>
+                       <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                     </tr>
+                   </tbody>
+               </table>
+
+               <table class="brdr-sp0 normal dib phlm mtl vat">
+                 <thead> 
+                   <tr>
+                     <td class="fm ff fsn pb pts brdr-bn"><a class="phls phrs brdr-sld-thn bgc-000000 pts" href="http://vimdoc.sourceforge.net/htmldoc/pattern.html#N"><span class="fc-FFFFFF">N</span></a></td> 
+                     <td class="fm ff phrs pb pts">th</td>
+                   </tr>
+                 </thead>
+
+                 <tfoot>
+                   <tr>
+                     <td colspan="2" class="pt pbs maxw tac"><button title="Press to see the Vim letter commands in action." tabindex="28" id="N" class="cp brdr-sp0 fc-FFFFFF fm m0 brdr-000000 brdr-rad bgc-000000 pbs phl phr" type="button" onclick="displayExample(this.id)">
+                         <span class="fsm">&#x25b6;</span>
+                       </button>
+                     </td>
+                   </tr>
+                 </tfoot>
+
+                 <tbody id="show-N" class="js-show">
+                   <tr>  
+                     <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="6">1</td>
+                     <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Nth instance</td>
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">of</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">ch<span class="bgc-888888">a</span>racters</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">opposite of</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">search</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">direction.</td>
+                   </tr>
+                   <tr>
+                     <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="3">2</td>
+                     <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn"><span class="b">/</span> searches</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">forward and</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn"><span class="b">?</span> backward.</td>
+                   </tr>
+                   <tr>
+                     <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="5">3</td>
+                     <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">We searched</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn"><span class="b">?ar</span> and now</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">typed <span class="b">5N</span>.</td>
+                   </tr>
+                   <tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                 </tbody>
+
+                 <tbody id="hide-N" class="dn js-hide">
+                   <tr>  
+                     <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="6">1</td>
+                     <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Nth instance</td>
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">of</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">characters</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">opposite of</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">search</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">direction.</td>
+                   </tr>
+                   <tr>
+                     <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="3">2</td>
+                     <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn"><span class="b">/</span> searches</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">forward and</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn"><span class="b">?</span> backward.</td>
+                   </tr>
+                   <tr>
+                     <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="5">3</td>
+                     <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">We se<span class="bgc-888888">a</span>rched</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn"><span class="b">?ar</span> and now</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">typed <span class="b">5N</span>.</td>
+                   </tr>
+                   <tr>
+                     <tr>
+                       <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                     </tr>
+                     <tr>
+                       <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                     </tr>
+                   </tbody>
+               </table>
+             </section>
+
+             <section id="vim-o-commands" class="">
+               <table class="brdr-sp0 dib phlm insert mtl">
+                 <thead> 
+                   <tr>
+                     <td class="fm ff fsn pb pts brdr-bn"><a class="phls phrs brdr-sld-thn bgc-000000 pts" href="http://vimdoc.sourceforge.net/htmldoc/insert.html#o"><span class="fc-FFFFFF">o</span></a></td> 
+                     <td class="fm ff phrs pb pts">ffset</td>
+                   </tr>
+                 </thead>
+
+                 <tfoot>
+                   <tr>
+                     <td colspan="2" class="pt pbs maxw tac"><button title="Press to see the Vim letter commands in action." tabindex="29" id="o" class="cp brdr-sp0 fc-FFFFFF fm m0 brdr-000000 brdr-rad bgc-000000 pbs phl phr" type="button" onclick="displayExample(this.id)">
+                         <span class="fsm">&#x25b6;</span>
+                       </button>
+                     </td>
+                   </tr>
+                 </tfoot>
+
+                 <tbody id="show-o" class="js-show">
+                   <tr>  
+                     <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="7">1</td>
+                     <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Offse<span class="bgc-888888">t</span></td>
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">current line</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">with new</td>
+
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">line below</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">and cursor</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">in insert</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">mode.</td>
+                   </tr>
+                   <tr>  
+                     <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="6">&nbsp;</td>
+                     <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                 </tbody>
+
+                 <tbody id="hide-o" class="dn js-hide">
+                   <tr>  
+                     <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="7">1</td>
+                     <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Offset</td>
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">current line</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">with new</td>
+
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">line below</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">and cursor</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">in insert</td>
+                   </tr>
+<tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">mode.</td>
+                   </tr>
+                   <tr>  
+                     <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="1">2</td>
+
+                     <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn"><span class="bgc-888888">&nbsp;</span></td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">--INSERT--</td>
+                   </tr>
+                 </tbody>
+               </table>
+
+               <table class="brdr-sp0 insert dib phlm vat mtl">
+                 <thead> 
+                   <tr>
+                     <td class="fm ff fsn pb pts brdr-bn"><a class="phls phrs brdr-sld-thn bgc-000000 pts" href="http://vimdoc.sourceforge.net/htmldoc/insert.html#O"><span class="fc-FFFFFF">O</span></a></td> 
+                     <td class="fm ff phrs pb pts">ffset</td>
+                   </tr>
+                 </thead>
+
+                 <tfoot>
+                   <tr>
+                     <td colspan="2" class="pt pbs maxw tac"><button title="Press to see the Vim letter commands in action." tabindex="30" id="O" class="cp brdr-sp0 fc-FFFFFF fm m0 brdr-000000 brdr-rad bgc-000000 pbs phl phr" type="button" onclick="displayExample(this.id)">
+                         <span class="fsm">&#x25b6;</span>
+                       </button>
+
+                     </td>
+                   </tr>
+                 </tfoot>
+
+                 <tbody id="show-O" class="js-show">
+                   <tr>  
+                     <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="7">1</td>
+                     <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Offse<span class="bgc-888888">t</span></td>
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">current line</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">with new</td>
+
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">line above</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">and cursor</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">in insert</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">mode.</td>
+                   </tr>
+                   <tr>  
+                     <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="1">&nbsp;</td>
+                     <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                 </tbody>
+
+                 <tbody id="hide-O" class="dn js-hide">
+                   <tr>  
+                     <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="1">1</td>
+
+                     <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn"><span class="bgc-888888">&nbsp;</span></td>
+                   </tr>
+                   <tr>  
+                     <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="7">2</td>
+                     <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Offset</td>
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">current line</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">with new</td>
+
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">line above</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">and cursor</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">in insert</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">mode.</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">--INSERT--</td>
+                   </tr>
+                 </tbody>
+               </table>
+             </section>
+
+             <section id="vim-p-commands" class="">
+               <table class="brdr-sp0 dib phlm insert mtl">
+                 <thead> 
+                   <tr>
+                     <td class="fm ff fsn pb pts brdr-bn"><a class="phls phrs brdr-sld-thn bgc-000000 pts" href="http://vimdoc.sourceforge.net/htmldoc/change.html#p"><span class="fc-FFFFFF">p</span></a></td> 
+                     <td class="fm ff phrs pb pts">ut</td>
+                   </tr>
+                 </thead>
+
+                 <tfoot>
+                   <tr>
+                     <td colspan="2" class="pt pbs maxw tac"><button title="Press to see the Vim letter commands in action." tabindex="31" id="p" class="cp brdr-sp0 fc-FFFFFF fm m0 brdr-000000 brdr-rad bgc-000000 pbs phl phr" type="button" onclick="displayExample(this.id)">
+                         <span class="fsm">&#x25b6;</span>
+                       </button>
+                     </td>
+                   </tr>
+                 </tfoot>
+
+                 <tbody id="show-p" class="js-show">
+                   <tr>  
+                     <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="5">1</td>
+                     <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Put text</td>
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">from <span class="b">"</span></td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">register</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">after</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">cursor.</td>
+                   </tr>
+                   <tr>  
+                     <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="7">2</td>
+                     <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Before we</td>
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">used <span class="b">db</span> for</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">the <span class="b">d</span></td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">command. Put</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">that text</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">here<span class="bgc-888888">.</span></td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                 </tbody>
+
+                 <tbody id="hide-p" class="dn js-hide" >
+                   <tr>  
+                     <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="5">1</td>
+                     <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Put text</td>
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">from <span class="b">"</span></td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">register</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">after</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">cursor.</td>
+                   </tr>
+                   <tr>  
+                     <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="7">2</td>
+                     <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Before we</td>
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">used <span class="b">db</span> for</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">the <span class="b">d</span></td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">command. Put</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">that text</td>
+                   </tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">here.{motio<span class="bgc-888888">n</span></td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                 </tbody>
+               </table>
+
+               <table class="brdr-sp0 dib phlm insert mtl vat">
+                 <thead> 
+                   <tr>
+                     <td class="fm ff fsn pb pts brdr-bn"><a class="phls phrs brdr-sld-thn bgc-000000 pts" href="http://vimdoc.sourceforge.net/htmldoc/change.html#P"><span class="fc-FFFFFF">P</span></a></td> 
+                     <td class="fm ff phrs pb pts">ut</td>
+                   </tr>
+                 </thead>
+
+                 <tfoot>
+                   <tr>
+                     <td colspan="2" class="pt pbs maxw tac"><button title="Press to see the Vim letter commands in action." tabindex="32" id="P" class="cp brdr-sp0 fc-FFFFFF fm m0 brdr-000000 brdr-rad bgc-000000 pbs phl phr" type="button" onclick="displayExample(this.id)">
+                         <span class="fsm">&#x25b6;</span>
+                       </button>
+                     </td>
+                   </tr>
+                 </tfoot>
+
+                 <tbody id="show-P" class="js-show">
+                   <tr>  
+                     <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="5">1</td>
+                     <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Put text</td>
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">from <span class="b">"</span></td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">register</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">before</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">cursor.</td>
+                   </tr>
+                   <tr>  
+                     <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="7">2</td>
+                     <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Before we</td>
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">used <span class="b">db</span> for</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">the <span class="b">d</span></td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">command. Put</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">that text</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">here<span class="bgc-888888">.</span></td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                 </tbody>
+
+                 <tbody id="hide-P" class="dn js-hide">
+                   <tr>  
+                     <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="5">1</td>
+                     <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Put text</td>
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">from <span class="b">"</span></td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">register</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">before</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">cursor.</td>
+                   </tr>
+                   <tr>  
+                     <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="7">2</td>
+                     <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Before we</td>
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">used <span class="b">db</span> for</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">the <span class="b">d</span></td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">command. Put</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">that text</td>
+                   </tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">here{motio<span class="bgc-888888">n</span>.</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                 </tbody>
+               </table>
+             </section>
+
+             <section id="vim-q-commands" class="">
+               <table class="brdr-sp0 dib phlm insert mtl">
+                 <thead> 
+                   <tr>
+                     <td class="fm ff fsn pb pts brdr-bn"><a class="phls phrs brdr-sld-thn bgc-000000 pts" href="http://vimdoc.sourceforge.net/htmldoc/repeat.html#q"><span class="fc-FFFFFF">q</span></a></td> 
+                     <td class="fm ff phrs pb pts">uantify</td>
+                   </tr>
+                 </thead>
+
+                 <tfoot>
+                   <tr>
+                     <td colspan="2" class="pt pbs maxw tac"><button title="Press to see the Vim letter commands in action." tabindex="33" id="q" class="cp brdr-sp0 fc-FFFFFF fm m0 brdr-000000 brdr-rad bgc-000000 pbs phl phr" type="button" onclick="displayExample(this.id)">
+                         <span class="fsm">&#x25b6;</span>
+                       </button>
+                     </td>
+                   </tr>
+                 </tfoot>
+
+                 <tbody id="show-q" class="js-show">
+                   <tr>  
+                     <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="7">1</td>
+                     <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Quantify by</td>
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">typing <span class="b">q</span> the</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">start/stop</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">of recording</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">actions to</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">a register</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn"><span class="b">&Oslash;-9</span> or <span class="b">a-z</span>.</td>
+                   </tr>
+                   <tr>  
+                     <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="9">2</td>
+                     <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">We typed</td>
+
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn"><span class="b lsp-xsmall">qxGdggq</span></td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">and will</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">execute the</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn"><span class="b">x</span> register</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">by typing <span class="b">@x</span></td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                 </tbody>
+
+                 <tbody id="hide-q" class="dn js-hide">
+                   <tr>  
+                     <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="7">1</td>
+                     <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>  
+                     <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="9">2</td>
+                     <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">&nbsp;</td>
+
+                   </tr>  
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                   <tr>
+                     <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                   </tr>
+                 </tbody>
+             </table>
+
+             <table class="brdr-sp0 dib phlm insert mtl vat">
+               <thead> 
+                 <tr>
+                   <td class="fm ff fsn pb pts brdr-bn"><a class="phls phrs brdr-sld-thn bgc-000000 pts" href="http://vimdoc.sourceforge.net/htmldoc/intro.html#Q"><span class="fc-FFFFFF">Q</span></a></td> 
+                   <td class="fm ff phrs pb pts">ickstep</td>
+                 </tr>
+               </thead>
+
+               <tfoot>
+                 <tr>
+                   <td colspan="2" class="pt pbs maxw tac"><button title="Press to see the Vim letter commands in action." tabindex="34" id="Q" class="cp brdr-sp0 fc-FFFFFF fm m0 brdr-000000 brdr-rad bgc-000000 pbs phl phr" type="button" onclick="displayExample(this.id)">
+                       <span class="fsm">&#x25b6;</span>
+                     </button>
+                   </td>
+                 </tr>
+               </tfoot>
+
+               <tbody id="show-Q" class="js-show">
+                 <tr>  
+                   <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="5">1</td>
+                   <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Quickstep</td>
+                 </tr>  
+                 <tr>
+                   <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">from Normal</td>
+                 </tr>
+                 <tr>
+                   <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">mode to</td>
+                 </tr>
+                 <tr>
+                   <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">continuous</td>
+                 </tr>
+                 <tr>
+                   <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">Ex-mode.</td>
+                 </tr>
+                 <tr>  
+                   <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="4">2</td>
+                   <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">To return to</td>
+                 </tr>  
+                 <tr>
+                   <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">Normal mode</td>
+                 </tr>
+                 <tr>
+                   <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">type <span class="b">vi</span> as</td>
+                 </tr>
+                 <tr>
+                   <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">shown below.</td>
+                 </tr>
+                 <tr>
+                   <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">&nbsp;</td>
+                 </tr>
+                 <tr>
+                   <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phls brdr-000000 brdr-sld-thn">:vi</td>
+                 </tr>
+               </tbody>
+
+               <tbody id="hide-Q" class="dn js-hide">
+                 <tr>  
+                   <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="5">1</td>
+                   <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Quickstep</td>
+                 </tr>  
+                 <tr>
+                   <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">from Normal</td>
+                 </tr>
+                 <tr>
+                   <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">mode to</td>
+                 </tr>
+                 <tr>
+                   <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">continuous</td>
+                 </tr>
+                 <tr>
+                   <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">Ex-mode.</td>
+                 </tr>
+                 <tr>  
+                   <td class="pts fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="7">2</td>
+                   <td class="pts bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">To return to</td>
+                 </tr>  
+                 <tr>
+                   <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">Normal mode</td>
+                 </tr>
+                 <tr>
+                   <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">type <span class="b">vi</span> as</td>
+                 </tr>
+                 <tr>
+                   <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">shown below.</td>
+                 </tr>
+                 <tr>
+                   <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">&nbsp;</td>
+                 </tr>
+                 <tr>
+                   <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+                 </tr>
+               </tbody>
+           </table>
+         </section>
+         
+         <section id="vim-r-commands" class="">
+           <table class="brdr-sp0 dib phlm insert mtl">
+             <thead> 
+               <tr>
+                 <td class="fm ff fsn pb pts brdr-bn"><a class="phls phrs brdr-sld-thn bgc-000000 pts" href="http://vimdoc.sourceforge.net/htmldoc/change.html#r"><span class="phls phrs fc-FFFFFF">r</span></a></td> 
+                 <td class="fm ff phrs pb pts">eplace</td>
+               </tr>
+             </thead>
+
+             <tfoot>
+               <tr>
+                 <td colspan="2" class="pt pbs maxw tac"><button title="Press to see the Vim letter commands in action." tabindex="35" id="r" class="cp brdr-sp0 fc-FFFFFF fm m0 brdr-000000 brdr-rad bgc-000000 pbs phl phr" type="button" onclick="displayExample(this.id)">
+                     <span class="fsm">&#x25b6;</span>
+                   </button>
+                 </td>
+               </tr>
+             </tfoot>
+
+             <tbody id="show-r" class="js-show">
+               <tr>  
+                 <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="6">1</td>
+                 <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Replace</td>
+               </tr>  
+               <tr>
+                 <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">th<span class="bgc-888888">e</span>text</td>
+               </tr>
+               <tr>
+                 <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">under the</td>
+               </tr>
+               <tr>
+                 <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">cursor with</td>
+               </tr>
+               <tr>
+                 <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">cursor.</td>
+               </tr>
+               <tr>
+                 <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">&nbsp;</td>
+               </tr>
+               <tr>
+                 <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+               </tr>
+             </tbody>
+
+             <tbody id="hide-r" class="dn js-hide">
+               <tr>  
+                 <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="4">1</td>
+                 <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Replace</td>
+               </tr>  
+               <tr>
+                 <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">the text</td>
+               </tr>
+               <tr>
+                 <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">under the</td>
+               </tr>
+               <tr>
+                 <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">cursor.</td>
+               </tr>
+               <tr>
+                 <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">&nbsp;</td>
+               </tr>
+               <tr>
+                 <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+               </tr>
+             </tbody>
+           </table>
+
+           <table class="brdr-sp0 insert dib phlm vat mtl">
+             <thead> 
+               <tr>
+                 <td class="fm ff fsn pb pts brdr-bn"><a class="phls phrs brdr-sld-thn bgc-000000 pts" href="http://vimdoc.sourceforge.net/htmldoc/insert.html#I"><span class="fc-FFFFFF phrs phls">I</span></a></td> 
+                 <td class="fm ff phrs pb pts">nsert</td>
+               </tr>
+             </thead>
+
+             <tfoot>
+               <tr>
+                 <td colspan="2" class="pt pbs maxw tac"><button title="Press to see the Vim letter commands in action." tabindex="18" id="I" class="cp brdr-sp0 fc-FFFFFF fm m0 brdr-000000 brdr-rad bgc-000000 pbs phl phr" type="button" onclick="displayExample(this.id)">
+                     <span class="fsm">&#x25b6;</span>
+                   </button>
+
+                 </td>
+               </tr>
+             </tfoot>
+
+             <tbody id="show-I" class="js-show">
+               <tr>  
+                 <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="3">1</td>
+                 <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn">Before lin<span class="bgc-888888">e</span></td>
+               </tr>  
+               <tr>
+                 <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">enter insert</td>
+               </tr>
+               <tr>
+                 <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">mode.</td>
+               </tr>
+               <tr>
+                 <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">&nbsp;</td>
+               </tr>
+               <tr>
+                 <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">&nbsp;</td>
+               </tr>
+             </tbody>
+
+             <tbody id="hide-I" class="dn js-hide">
+               <tr>  
+                 <td class="ptm fc-FF6600 va-txtt ff-code f phl brdr-000000 bgc-000000" rowspan="3">1</td>
+                 <td class="ptm bgc-000000 fc-FFFFFF ff-code f phrs tal brdr-000000 bgc-000000 brdr-sld-thn"><span class="bgc-888888">B</span>efore line</td>
+               </tr>  
+               <tr>
+                 <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">enter insert</td>
+               </tr>
+               <tr>
+                 <td class="bgc-000000 fc-FFFFFF ff-code f phrs brdr-000000 brdr-sld-thn">mode.</td>
+               </tr>
+               <tr>
+                 <td colspan="2" class="bgc-000000 fc-FFFFFF ff-code f brdr-000000 brdr-sld-thn">&nbsp;</td>
+               </tr>
+               <tr>
+                 <td colspan="2" class="b bgc-000000 fc-FFFFFF ff-code f phl brdr-000000 brdr-sld-thn">--INSERT--</td>
+               </tr>
+             </tbody>
+           </table>
+         </section>
+
+ <dl class='dn phlxl maxw normal ptl m0 brdr-dot brdr-F8F8F8' id='r'>
+   <dt class='fm'><code class='ff'><a href='http://vimdoc.sourceforge.net/htmldoc/change.html#r'>r</a></code></dt>
+   <dd class='ff f m0 ptl'><mark class='bgc-E0E0E0 b'>Replace</mark> the character under the cursor with the character you type without leaving Normal mode.
+   </dd>
+   <dd class='ff f m0 ptl'>
+   r{char} 
+   </dd>
+   <dd class='ff f m0 ptl'>
+   <kbd class='f ff b'>r{char}z</kbd> Replace the character under your cursor with the letter "z".
+   </dd>
+ </dl>
+
+ <dl class='dn phlxl maxw normal ptl m0 brdr-dot brdr-F8F8F8' id='R'>
+   <dt class='fm'><code class='ff'><a href='http://vimdoc.sourceforge.net/htmldoc/change.html#R'>R</a></code></dt>
+   <dd class='ff f m0 ptl'><mark class='bgc-E0E0E0 b'>REPLACE</mark> mode will be entered and every character typed will replace the chracter under the cursor.
+   </dd>
+   <dd class='ff f m0 ptl'>
+   R
+   </dd>
+   <dd class='ff f m0 ptl'>
+   <kbd class='f ff b'>R</kbd> Replace mode is entered and every character typed will replace the chracter under the cursor.
+   </dd>
+ </dl>
+
+ <dl class='dn phlxl maxw normal ptl m0 brdr-dot brdr-F8F8F8' id='s'>
+   <dt class='fm'><code class='ff'><a href='http://vimdoc.sourceforge.net/htmldoc/change.html#s'>s</a></code></dt>
+   <dd class='ff f m0 ptl'><mark class='bgc-E0E0E0 b'>Substitute</mark> the character under the cursor with the character you type now in Insert mode. Synonym: <kbd class ='b ff'>cl</kbd>.
+   </dd>
+   <dd class='ff f m0 ptl'>
+   [count]s
+   </dd>
+   <dd class='ff f m0 ptl'>
+   <kbd class='f ff b'>23s</kbd> Substitute the character under the cursor and the following 22 characters with what I type.
+   </dd>
+ </dl>
+ 
+ <dl class='dn phlxl maxw normal ptl m0 brdr-dot brdr-F8F8F8' id='S' >
+   <dt class='fm'><code class='ff'><a href='http://vimdoc.sourceforge.net/htmldoc/change.html#S'>S</a></code></dt>
+   <dd class='ff f m0 ptl'><mark class='bgc-E0E0E0 b'>SUBSTITUTE</mark> the current line and the number of lines specified with the characters you type now in Insert mode. Synonym: <kbd class ='b ff'>0&#x0338&#67;</kbd>.
+   </dd>
+   <dd class='ff f m0 ptl'>
+   [count]S
+   </dd>
+   <dd class='ff f m0 ptl'>
+   <kbd class='f ff b'>23S</kbd> Substitute the current word under the cursor and the following 22 characters with what I type.
+   </dd>
+ </dl>
+ 
+ <dl class='dn phlxl maxw motion ptl m0 brdr-dot brdr-F8F8F8' id='t'>
+   <dt class='fm'><code class='ff'><a href='http://vimdoc.sourceforge.net/htmldoc/motion.html#t'>t</a></code></dt>
+   <dd class='ff f m0 ptl'><mark class='bgc-E0E0E0 b'>Till</mark> <b>before</b> the [count] instance of the character specified to the <b>right</b> on the current line including the character under the cursor implement the operator action specified. 
+   </dd>
+   <dd class='ff f m0 ptl'>
+   [count<span class='lsp-small'>]</span>operato<span class='lsp-small'>r</span><span class='lsp-small'>t</span>{char}
+   </dd>
+   <dd class='ff f m0 ptl'>
+   <kbd class='f ff b'>23cta</kbd> Till <b>before</b> the 23rd instance of the letter "a" to the <b>right</b>, including the character under the cursor cut all of the text to the buffer and enter insert mode.
+   </dd>
+ </dl>
+
+ <dl class='dn phlxl maxw motion ptl m0 brdr-dot brdr-F8F8F8' id='T'>
+   <dt class='fm'><code class='ff'><a href='http://vimdoc.sourceforge.net/htmldoc/motion.html#T'>T</a></code></dt>
+   <dd class='ff f m0 ptl'><mark class='bgc-E0E0E0 b'>Till</mark> <b>after</b> the [count] instance of the character specified to the <b>left</b> on the current line excluding the character under the cursor implement the operator action specified. 
+   </dd>
+   <dd class='ff f m0 ptl'>
+   [count<span class='lsp-small'>]</span>operato<span class='lsp-small'>r</span><span class='lsp-small'>T</span>{char}
+   </dd>
+   <dd class='ff f m0 ptl'>
+   <kbd class='f ff b'>23cTa</kbd> Till <b>after</b> the 23rd instance of the letter "a" to the <b>left</b> excluding the character under the cursor cut all of the text to the buffer and enter insert mode.
+   </dd>
+ </dl>
+
+ <dl class='dn phlxl maxw normal ptl m0 brdr-dot brdr-F8F8F8' id='u'>
+   <dt class='fm'><code class='ff'><a href='http://vimdoc.sourceforge.net/htmldoc/undo.html#u'>u</a></code></dt>
+   <dd class='ff f m0 ptl'><mark class='bgc-E0E0E0 b'>Undo</mark> [count] changes throughout the entire file. 
+   </dd>
+   <dd class='ff f m0 ptl'>
+   [count<span class='lsp-small'>]</span>u
+   </dd>
+   <dd class='ff f m0 ptl'>
+   <kbd class='f ff b'>23u</kbd> Undo all 23 previous changes throughout the entire file.
+   </dd>
+ </dl>
+
+ <dl class='dn phlxl maxw normal ptl m0 brdr-dot brdr-F8F8F8' id='U'>
+   <dt class='fm'><code class='ff'><a href='http://vimdoc.sourceforge.net/htmldoc/undo.html#U'>U</a></code></dt>
+   <dd class='ff f m0 ptl'><mark class='bgc-E0E0E0 b'>UNDO</mark> all recent changes made on the line where the cursor is. When you use the <kbd class='f ff b'>U</kbd> command more than once it will toggle between undoing and repeating changes for the line on which the cursor is. 
+   </dd>
+   <dd class='ff f m0 ptl'>
+   [count<span class='lsp-small'>]</span>U
+   </dd>
+   <dd class='ff f m0 ptl'>
+   <kbd class='f ff b'>23U</kbd> Undo all changes on the 23 previous lines on which there were changes.
+   </dd>
+ </dl>
+
+ <dl class='dn phlxl maxw normal ptl m0 brdr-dot brdr-F8F8F8' id='v'>
+   <dt class='fm'><code class='ff'><a href='http://vimdoc.sourceforge.net/htmldoc/visual.html#v'>v</a></code></dt>
+   <dd class='ff f m0 ptl'><mark class='bgc-E0E0E0 b'>Visual</mark> mode <span class='f ff b'>per character</span> is entered selecting the character under the cursor and all characters in the direction multiple specified. Additional commands specifically <span class='b'>{motion}</span> to highlight and an <span class='b'>operator</span> to implement an action on the highlighted characters are required. 
+   </dd>
+   <dd class='ff f m0 ptl'>
+   <span class='lsp-small'>v</span><span class='lsp-small'>[count]</span>{motion<span class='lsp-small'>}</span>operator
+   </dd>
+   <dd class='ff f m0 ptl'>
+   <kbd class='f ff b'>gv"xc</kbd> Visually select the previous Visual mode selection and cut it to register <span class='b'>x</span>.
+   </dd>
+ </dl>
+
+ <dl class='dn phlxl maxw normal ptl m0 brdr-dot brdr-F8F8F8' id='V'>
+   <dt class='fm'><code class='ff'><a href='http://vimdoc.sourceforge.net/htmldoc/visual.html#v'>V</a></code></dt>
+   <dd class='ff f m0 ptl'><mark class='bgc-E0E0E0 b'>VISUAL</mark> mode <span class='f ff b'>per line</span> is entered selecting the line under the cursor and all lines in the direction multiple specified. Additional commands specifically <span class='b'>{motion}</span> to highlight and an <span class='b'>operator</span> to implement an action on the highlighted characters are required. 
+   </dd>
+   <dd class='ff f m0 ptl'>
+   <span class='lsp-small'>V</span><span class='lsp-small'>[count]</span>{motion<span class='lsp-small'>}</span>operator
+   </dd>
+   <dd class='ff f m0 ptl'>
+   <kbd class='f ff b'>23Vy</kbd> Visual mode will select the next 23 lines. Yank the selection to the buffer.
+   </dd>
+ </dl>
+ 
+ <dl class='dn phlxl maxw motion ptl m0 brdr-dot brdr-F8F8F8' id='w'>
+   <dt class='fm'><code class='ff'><a href='http://vimdoc.sourceforge.net/htmldoc/motion.html#w'>w</a></code></dt>
+   <dd class='ff f m0 ptl'><mark class='bgc-E0E0E0 b'>Word</mark>, the beginning of the <span class='b'>[count]</span> special character after the current cursor position and <span class='b'>[count]</span> string of letters after the next blank space is where the cursor should be.
+   </dd>
+   <dd class='ff f m0 ptl'>
+  <span class='lsp-small'>[count]</span>w
+   </dd>
+   <dd class='ff f m0 ptl'>
+   <kbd class='f ff b'>23w</kbd> 23 words or strings of letters after the current cursor position or special character is where the cursor should be. 
+   </dd>
+ </dl>
+
+ <dl class='dn phlxl maxw motion ptl m0 brdr-dot brdr-F8F8F8' id='W'>
+   <dt class='fm'><code class='ff'><a href='http://vimdoc.sourceforge.net/htmldoc/motion.html#W'>W</a></code></dt>
+   <dd class='ff f m0 ptl'><mark class='bgc-E0E0E0 b'>WORD</mark> or the beginning of the <span class='b'>[count]</span> string of characters after the current cursor position and after a blank space is the where the cursor should be.
+   </dd>
+   <dd class='ff f m0 ptl'>
+  <span class='lsp-small'>[count]</span>w
+   </dd>
+   <dd class='ff f m0 ptl'>
+   <kbd class='f ff b'>23W</kbd> 23 words or strings of letters after the current cursor position or special character is where the cursor should be. 
+   </dd>
+ </dl>
+
+ <dl class='dn phlxl maxw opertor ptl m0 brdr-dot brdr-F8F8F8' id='x'>
+   <dt class='fm'><code class='ff'><a href='http://vimdoc.sourceforge.net/htmldoc/change.html#x'>x</a></code></dt>
+   <dd class='ff f m0 ptl'><mark class='bgc-E0E0E0 b'>x</mark> or delete <span class='b'>[count]</span> characters <span class='b'>including</span> the character under the cursor. 
+   </dd>
+   <dd class='ff f m0 ptl'>
+  <span class='lsp-small'>[count]</span>x
+   </dd>
+   <dd class='ff f m0 ptl'>
+   <kbd class='f ff b'>23x</kbd> x or delete 23 characters after and <span class='b'>including</span> the character <span class='b'>under</span> the cursor.
+   </dd>
+ </dl>
+
+ <dl class='dn phlxl maxw opertor ptl m0 brdr-dot brdr-F8F8F8' id='X'>
+   <dt class='fm'><code class='ff'><a href='http://vimdoc.sourceforge.net/htmldoc/change.html#X'>X</a></code></dt>
+   <dd class='ff f m0 ptl'><mark class='bgc-E0E0E0 b'>X</mark> or delete <span class='b'>[count]</span> characters <span class='b'>before</span> the cursor with the default being one. 
+   </dd>
+   <dd class='ff f m0 ptl'>
+  <span class='lsp-small'>[count]</span>X
+   </dd>
+   <dd class='ff f m0 ptl'>
+   <kbd class='f ff b'>23X</kbd> X or delete 23 characters <span class='b'>before</span> the current cursor position.
+   </dd>
+ </dl>
+
+ <dl class='dn phlxl maxw opertor ptl m0 brdr-dot brdr-F8F8F8' id='y'>
+   <dt class='fm'><code class='ff'><a href='http://vimdoc.sourceforge.net/htmldoc/change.html#y'>y</a></code></dt>
+   <dd class='ff f m0 ptl'><mark class='bgc-E0E0E0 b'>Yank</mark> or copy <span class='b'>[count]</span> characters with the <span class='b'>{motion}</span> specified to the buffer. 
+   </dd>
+   <dd class='ff f m0 ptl'>
+   <span class='lsp-small'>[count]</span><span class='lsp-small'>y</span>{motion}
+   </dd>
+   <dd class='ff f m0 ptl'>
+   <kbd class='f ff b'>23yl</kbd> Yank or copy to the buffer 23 characters under and to right of the cursor on the current line.
+   </dd>
+ </dl>
+
+ <dl class='dn phlxl maxw opertor ptl m0 brdr-dot brdr-F8F8F8' id='Y'>
+   <dt class='fm'><code class='ff'><a href='http://vimdoc.sourceforge.net/htmldoc/change.html#Y'>Y</a></code></dt>
+   <dd class='ff f m0 ptl'><mark class='bgc-E0E0E0 b'>YANK</mark> or copy <span class='b'>[count]</span> lines both under the cursor and below the current line to the buffer. 
+   </dd>
+   <dd class='ff f m0 ptl'>
+   <span class='lsp-small'>[count]</span>Y
+   </dd>
+   <dd class='ff f m0 ptl pbl'>
+   <kbd class='f ff b'>23Y</kbd> YANK or copy to the buffer 23 lines both under the cursor and below the current line.
+   </dd>
+ </dl>
+
+ <dl class='dn phlxl maxw normal ptl m0 brdr-dot brdr-F8F8F8' id='z'>
+   <dt class='fm'><code class='ff'><a href='http://vimdoc.sourceforge.net/htmldoc/scroll.html#z<CR>'>z&lt;CR&gt</a></code></dt>
+   <dd class='ff f m0 ptl'><mark class='bgc-E0E0E0 b'>Zero</mark> the cursor line number to the top of the current screen or <span class='b'>[count]</span> line number after you hit return or enter. 
+   </dd>
+   <dd class='ff f m0 ptl'>
+   <span class='lsp-small'>[count]</span><span class='lsp-small'>z</span>&lt;CR&gt;
+   </dd>
+   <dd class='ff f m0 ptl pbs'>
+   <kbd class='f ff b'>23z&lt;CR&gt;</kbd> Zero the 23rd line to the top of the screen and move the cursor to the line's first non-blank character.
+   </dd>
+ </dl>
+
+ <dl class='dn phlxl maxw normal ptl m0 brdr-dot brdr-F8F8F8' id='Z'>
+   <dt class='fm'><code class='ff'><a href='http://vimdoc.sourceforge.net/htmldoc/editing.html#ZZ'>ZZ</a></code></dt>
+   <dd class='ff f m0 ptl'><mark class='bgc-E0E0E0 b'>ZOOM</mark> out of the current file by first saving if there have been any modifications since the last save and then quitting.  
+   </dd>
+   <dd class='ff f m0 ptl'>
+   ZZ
+   </dd>
+   <dd class='ff f m0 ptl pbs'>
+   <kbd class='f ff b'>ZZ</kbd> Zoom out of the current file by first saving if there have been any modifications since the last save and then quitting.
+   </dd>
+ </dl>
+</main>
+ <nav id="4" onclick="" class="mtl mbl mb3 tac w50">
+       <section class='w80' id=''>
+  <a href='https://twitter.com/sndsgns' class=''>
+       <svg viewBox="0 0 2000 1625.36" width="60" height="40" version="1.1" xmlns="http://www.w3.org/2000/svg">
+         <path d="m 1999.9999,192.4 c -73.58,32.64 -152.67,54.69 -235.66,64.61 84.7,-50.78 149.77,-131.19 180.41,-227.01 -79.29,47.03 -167.1,81.17 -260.57,99.57 C 1609.3399,49.82 1502.6999,0 1384.6799,0 c -226.6,0 -410.328,183.71 -410.328,410.31 0,32.16 3.628,63.48 10.625,93.51 -341.016,-17.11 -643.368,-180.47 -845.739,-428.72 -35.324,60.6 -55.5583,131.09 -55.5583,206.29 0,142.36 72.4373,267.95 182.5433,341.53 -67.262,-2.13 -130.535,-20.59 -185.8519,-51.32 -0.039,1.71 -0.039,3.42 -0.039,5.16 0,198.803 141.441,364.635 329.145,402.342 -34.426,9.375 -70.676,14.395 -108.098,14.395 -26.441,0 -52.145,-2.578 -77.203,-7.364 52.215,163.008 203.75,281.649 383.304,284.946 -140.429,110.062 -317.351,175.66 -509.5972,175.66 -33.1211,0 -65.7851,-1.949 -97.8828,-5.738 181.586,116.4176 397.27,184.359 628.988,184.359 754.732,0 1167.462,-625.238 1167.462,-1167.47 0,-17.79 -0.41,-35.48 -1.2,-53.08 80.1799,-57.86 149.7399,-130.12 204.7499,-212.41" style="fill:#55acee"></path>
+     </svg></a>
+   </section>
+ </nav>
+    <script async src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script async src="app.js"></script>
+ </body>
+</html>
